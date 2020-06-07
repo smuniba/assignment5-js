@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <!-- Question 6-7a of chapter 1 -->
+    <script>alert("Hello World!")</script>
+</head>
+<!-- Question 6-7b of chapter 1-->
+<script>alert("Hello People!")</script>
+<body>
+<!-- Question 6-7c of chapter 1-->
+<script>
+    alert("Hello Friends!");
+</script>
+<h3>Chapter4: Question 3:</h3>
+    <h1>Rules for naming JS variables</h1>
+    <script>
+        document.write("Variable names can only contain ,numbers,,$ and _. For example: $my_1stVariable");
+        document.write("<br>Variables must begin with a letter,$ or _. For example: $name, _name or name");
+        document.write("<br>Variable names are case sensitive");
+        document.write("<br>Variable names should not be JS keywords");
+    </script>
+<h3>Chapter 5:</h3>
+<h3>Question 5</h3>    
+    <h4>Table of 5</h4>
+    <script>
+        var num = 5;
+        for (var i = 1; i <= 10; i++) {
+            document.write(num + "x" + i + "=" + num * i);
+            document.write("<br>");
+        }
+    </script>
+    <h3>Question 7</h3>
+    <h1>Shopping Cart</h1>
+    <script>
+        var item1 = 650;
+        var item2 = 100;
+        var quan1 = 3;
+        var quan2 = 7;
+        var charges = 100;
+        totalCost = (item1 * quan1) + (item2 * quan2) + charges;
+        document.write("<br>Price of item 1 is: " + item1);
+        document.write("<br>Quantity of item 1 is: " + quan1);
+        document.write("<br>Price of item 2 is: " + item2);
+        document.write("<br>Quantity of item 2 is: " + item2);
+        document.write("<br>Shipping Charges: " + charges);
+        document.write("<br><br>Total Cost of your order is " + totalCost);
+    </script>
+    <h3>Question 8</h3>
+    <h1>Marks Sheet</h1>
+    <script>
+        var totalMarks = 980;
+        var marksObtained = 804;
+        var percentage = (marksObtained / totalMarks) * 100;
+        document.write("<br>Total marks: " + totalMarks);
+        document.write("<br>Marks obtained: " + marksObtained);
+        document.write("<br>Percentage: " + percentage + "%");
+    </script>
+    <h3>Question 9</h3>
+    <h1>Currency in PKR</h1>
+    <script>
+        var us = 10;
+        var riyals = 25;
+        var convert = (us * 104.80) + (riyals * 28);
+        document.write("<br>Total Currency in PKR: " + convert);
+    </script>
+    <h3>Question 11</h3>
+    <h1>Age Calculator</h1>
+    <script>
+        var presentYear = 2020;
+        var birthYear = prompt("Enter birth year");
+        var age = presentYear - birthYear;
+        document.write("<br>Current Year: " + presentYear);
+        document.write("<br>Birth Year: " + birthYear);
+        document.write("<br>Your age is: " + age);
+    </script>
+    <h3>Question 12</h3>
+    <h1>The Geometrizer</h1>
+    <script>
+        var radius = 20;
+        var circumference = 2 * 3.142 * radius;
+        var area = 3.142 * radius * radius;
+        document.write("<br>Radius of a circle: " + radius);
+        document.write("<br>The circumference is: " + circumference);
+        document.write("<br>The area is: " + area);
+    </script>
+    <h3>Question 13</h3>
+    <h1>The Lifetime Supply Calculator</h1>
+    <script>
+        var snack = "Chocolate";
+        var age = 15;
+        var maximumAge = 65;
+        var amount = 3;
+        var result = (maximumAge - age) * amount;
+        document.write("<br>Favourite Snack: " + snack);
+        document.write("<br>Current Age: " + age);
+        document.write("<br>Estimated Maximum Age: " + maximumAge);
+        document.write("<br>Amount of snacks per day: " + amount);
+        document.write("<br>You will need " + result + " to last you until the ripe old age of " + maximumAge);
+    </script>
+    <h3>Chapter 6-9</h3>
+    <h3> Question 6 </h3>
+    <script>
+        var subject1 = prompt("Enter subject1 name: ");
+        var subject2 = prompt("Enter subject2 name: ");
+        var subject3 = prompt("Enter subject3 name: ");
+        var totalMarks1 = 100;
+        var totalMarks2 = 100;
+        var totalMarks3 = 100;
+        var obtained1 = +prompt("Enter marks obtained in subject1: ");
+        var obtained2 = +prompt("Enter marks obtained in subject2: ");
+        var obtained3 = +prompt("Enter marks obtained in subject3: ");
+        var percentage1 = (obtained1 / totalMarks1) * 100;
+        var percentage2 = (obtained2 / totalMarks2) * 100;
+        var percentage3 = (obtained3 / totalMarks3) * 100;
+        var totalMarks = totalMarks1 + totalMarks2 + totalMarks3;
+        var obtainedMarks = obtained1 + obtained2 + obtained3;
+        var Percentage = (obtainedMarks / totalMarks) * 100;
+    </script>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(subject1)</script>
+            </td>
+            <td>
+                <script>document.write(totalMarks1)</script>
+            </td>
+            <td>
+                <script>document.write(obtained1)</script>
+            </td>
+            <td>
+                <script>document.write(percentage1 + "%")</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(subject2)</script>
+            </td>
+            <td>
+                <script>document.write(totalMarks2)</script>
+            </td>
+            <td>
+                <script>document.write(obtained2)</script>
+            </td>
+            <td>
+                <script>document.write(percentage2 + "%")</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(subject3)</script>
+            </td>
+            <td>
+                <script>document.write(totalMarks3)</script>
+            </td>
+            <td>
+                <script>document.write(obtained3)</script>
+            </td>
+            <td>
+                <script>document.write(percentage3 + "%")</script>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <th>
+                <script>document.write(totalMarks)</script>
+            </th>
+            <th>
+                <script>document.write(obtainedMarks)</script>
+            </th>
+            <th>
+                <script>document.write(Percentage + "%")</script>
+            </th>
+        </tr>
+    </table>
+    <h3>Chapter 9-11</h3>
+    <h3>Question 3</h3>
+    <script>
+        var color1 = prompt("Enter first color of traffic signal: ");
+        var color2 = prompt("Enter second color of traffic signal: ");
+        var color3 = prompt("Enter third color of traffic signal: ");
+    </script>
+    <table>
+        <tr>
+            <th>Signal Color</th>
+            <th>Message</th>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(color1)</script>
+            </td>
+            <!-- <th colspan="100"></th> -->
+            <td>Must Stop</td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(color2)</script>
+            </td>
+            <!-- <th colspan="100"></th> -->
+            <td>Ready to move</td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(color3)</script>
+            </td>
+            <!-- <th colspan="100"></th> -->
+            <td>Move Now</td>
+        </tr>
+        <tr></tr>
+    </table>
+    <h3>Question 6</h3>    
+    <h1>Marks Sheet</h1>
+    <script>
+        var sub1 = +prompt("Enter marks obtained in subject1: ");
+        var sub2 = +prompt("Enter marks obtained in subject2: ");
+        var sub3 = +prompt("Enter marks obtained in subject3: ");
+        var tMarks = +prompt("Enter total marks: ");
+        var oMarks = sub1 + sub2 + sub3;
+        var percent = (oMarks/tMarks) * 100;
+        document.write("Total Marks: "+tMarks);
+        document.write("<br>");
+        document.write("Marks Obtained: "+oMarks);
+        document.write("<br>");
+        document.write("Percentage: "+percent+"%");
+        if(percent >= 80 && percent<=100)
+        {
+            document.write("<br>");
+            document.write("Grade: A-one");
+            document.write("<br>");
+            document.write("Remarks: Excellent");
+        }
+        else if(percent >= 70 && percent<80)
+        {
+            document.write("<br>");
+            document.write("Grade: A");
+            document.write("<br>");
+            document.write("Remarks: Good");
+        }
+        else if(percent >= 60 && percent<70)
+        {
+            document.write("<br>");
+            document.write("Grade: B");
+            document.write("<br>");
+            document.write("Remarks: You need to improve");
+        }
+        else
+        {
+            document.write("<br>");
+            document.write("Grade: Fail");
+            document.write("<br>");
+            document.write("Remarks: Sorry");
+        }
+    </script>
+    <h3>Chapter 14-16</h3>
+    <h3>Question 7</h3>
+    <h1>Qualifications</h1>
+    <script>
+        var array1 = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil.","PhD"];
+        for(var i=0;i<array1.length;i++)
+        {
+            document.write((i+1)+")"+" ",array1[i]);
+            document.write("<br>");
+        }
+    </script>
+    <h3>Question 8</h3>
+    <script>
+        var student = ["Michael","John","Tony"];
+        var student_marks = [320,230,480];
+        var totMarks = 500;
+        for(var i=0;i<student.length;i++)
+        {
+            var per = (student_marks[i]/totMarks)*100;
+            document.write("Score of "+student[i]+" is "+student_marks[i]+"."+"Percentage: "+per+"%");
+            document.write("<br>");
+        }
+    </script>
+    <h3>Question 9</h3>
+    <h1>Colors</h1>
+    <script>
+        var color = ["red","blue","green","orange","purple","pink","yellow","black","white"];
+        document.write("Original Array: "+color);
+        document.write("<br>");
+        var ask = prompt("What color do you want to add to the begining of array");
+        color.splice(0,1,ask);
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        var ask = prompt("What color do you want to add to the end of array");
+        color.pop();
+        color.push(ask);
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        color.unshift("peach","violet");
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        color.shift();
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        color.pop();
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        var ask = +prompt("At what index do you want to add color: ");
+        var ask1 = prompt("Color name to enter to that index: ");
+        color.splice(ask,1,ask1);
+        document.write("Updated Array: "+color);
+        document.write("<br>");
+        var ask = +prompt("At what index do you want to delete color: ");
+        var ask1 = +prompt("Number of colors to delete: ");
+        color.splice(ask,ask1);
+        document.write("Updated Array: "+color);
+</script>
+<h3>Question 10</h3>
+<h1>Student Scores in Ascending Order</h1>
+<script>
+    var scores = [320,230,480,120];
+    document.write("Scores of Students: "+scores);
+    document.write("<br>");
+    scores.sort();
+    document.write("Ordered Scores of Students: "+scores);
+</script>
+<h3>Question 11</h3>
+<h2>Cities List:</h2>
+<script>
+    var cities = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+    document.write(cities);
+</script>
+<h2>Selected Cities List:</h2>
+<script>
+    var selectedCities = cities.slice(2,5);
+    document.write(selectedCities);
+</script>
+<h3>Question 12</h3>
+<h2>Array:</h2>
+<script>
+    var arr = ["This","is","my","cat"];
+    document.write(arr);
+    document.write("<br>");
+</script>
+<h2>String:</h2>
+<script>
+    var arr1 = arr.join(" ");
+    document.write(arr1);
+</script>
+<h3>Question 13</h3>
+<h2>Devices</h2>
+<script>
+    var devices = ["keyboard","mouse","printer","monitor"];
+    for(var i=0;i<devices.length;i++)
+    {
+        document.write("Out:"+"<br>"+devices[i]+"<br>");
+    }
+</script>
+<h3>Question 14</h3>
+<h2>Devices</h2>
+<script>
+    var devices1 = ["keyboard","mouse","printer","monitor"];
+    for(var i=devices1.length-1;i>=0;i--)
+    {
+        document.write("Out:"+"<br>"+devices1[i]+"<br>");
+    }
+</script>
+<h3>Question 15</h3>
+<h1>Phone Manufacturers</h1>
+<script>
+    var manufacturer = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+</script>
+<select>
+    <option value=""><script>document.write(manufacturer[0])</script></option>
+    <option value=""><script>document.write(manufacturer[1])</script></option>
+    <option value=""><script>document.write(manufacturer[2])</script></option>
+    <option value=""><script>document.write(manufacturer[3])</script></option>
+    <option value=""><script>document.write(manufacturer[4])</script></option>
+    <option value=""><script>document.write(manufacturer[5])</script></option>
+</select>
+<h3>Chapter 17-20</h3>
+<h3>Question 6</h3>
+<h3>Counting:</h3>
+<script>
+    for(var i=1;i<=15;i++)
+    {
+        document.write(i+",");
+    }
+</script>
+<h3>Reverse Counting:</h3>
+<script>
+    for(var i=10;i>0;i--)
+    {
+        document.write(i+",");
+    }
+</script>
+<h3>Even:</h3>
+<script>
+    for(var i=0;i<=20;i=i+2)
+    {
+        document.write(i+",");
+    }
+</script>
+<h3>Odd:</h3>
+<script>
+    for(var i=1;i<=20;i=i+2)
+    {
+        document.write(i+",");
+    }
+</script>
+<h3>Series:</h3>
+<script>
+    for(var i=2;i<=20;i=i+2)
+    {
+        document.write(i+"k"+",");
+    }
+</script>
+</body>
+<!-- Question 6-7d of chapter 1-->
+<script>
+    alert("Hello Sir/Ma'am");
+</script>
+</html>
